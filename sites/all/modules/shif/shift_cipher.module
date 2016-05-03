@@ -40,3 +40,11 @@ function shift_cipher_menu(){
         'access callback' => TRUE,
         'type' => MENU_NORMAL_ITEM,
      );
+    $items['shift_cipher_success_page'] = array(
+    'title' => 'Congrats!',
+    'page callback' => 'shift_cipher_success',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+     );
+   return $items;
+}
