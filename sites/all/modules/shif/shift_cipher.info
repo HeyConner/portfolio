@@ -1,4 +1,4 @@
-name = Shift
+name = Shift Cipher
 description = Create a encrypted message with the text form.
 package = Conner Belvin
 core = 7.x

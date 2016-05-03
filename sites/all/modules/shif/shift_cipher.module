@@ -73,6 +73,10 @@ function shift_cipher_form() {
       '#required' => TRUE,
       '#element_validate' => array('element_validate_letters_punctuation'),
     );
+    $form['submit'] = array(
+        '#type' => 'submit',
+        '#value' => 'Encode Message!',
+    );
 
     return $form;
   }
