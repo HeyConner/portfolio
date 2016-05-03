@@ -48,3 +48,14 @@ function shift_cipher_menu(){
      );
    return $items;
 }
+
+function shift_cipher_form() {
+    $form['shift_spaces'] = array(
+      '#title' => 'Shift Spaces',
+      '#type' => 'textfield',
+      '#description' => t('Enter the number of spaces to shift.'),
+      '#required' => TRUE,
+      '#element_validate' => array('element_validate_integer', 'element_validate_number_range'),
+    );
+    return $form;
+  }
