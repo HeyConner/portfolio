@@ -2,4 +2,4 @@ name = Shift
 description = Create a encrypted message with the text form.
 package = Conner Belvin
 core = 7.x
-files[] = shift.module
+files[] = shift_cipher.module
