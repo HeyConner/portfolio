@@ -57,13 +57,21 @@ function shift_cipher_form() {
       '#required' => TRUE,
       '#element_validate' => array('element_validate_integer', 'element_validate_number_range'),
     );
-    
+
     $form['shift_direction'] = array(
         '#title' => 'Shift Direction',
         '#type' => 'textfield',
         '#description' => t('Enter a direction. (left or right or random)'),
         '#required' => TRUE,
         '#element_validate' => array('element_validate_left_right'),
+    );
+
+    $form['user_input'] = array(
+      '#title' => 'Secret Message',
+      '#type' => 'textfield',
+      '#description' => t('Enter a message to encode.'),
+      '#required' => TRUE,
+      '#element_validate' => array('element_validate_letters_punctuation'),
     );
 
     return $form;
